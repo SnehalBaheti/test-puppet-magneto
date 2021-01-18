@@ -26,22 +26,22 @@ class testmagneto(
     path => "/usr/bin",
   }
 
-  exec { "apt-get update": }
+  exec { "sudo apt-get update": }
 
   class { "testmagneto::mysql":
     database => $database,
     user     => $user,
     password => $password,
-    require  => Exec["apt-get update"]
+    require  => Exec["sudo apt-get update"]
   }
 
   class { "testmagneto::nginx":
     cache   => $cache,
-    require => Exec["apt-get update"]
+    require => Exec["sudo apt-get update"]
   }
 
   class { "testmagneto::php":
-    require => Exec["apt-get update"]
+    require => Exec["sudo apt-get update"]
   }
 }
 
