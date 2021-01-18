@@ -1,0 +1,21 @@
+{
+  "name": "test magneto",
+  
+  
+ 
+   "dependencies": [
+
+  ],
+  "types": [
+
+  ],
+  "checksums": {
+    "Modulefile": "f80bfe1b9d975551ce2b5cb8525570bf",
+    "README.markdown": "118587f88f6c7cdde0043b938305f616",
+    "manifests/init.pp": "52209383413fc190a10268778188195d",
+    "manifests/mysql.pp": "ccd1fab46ee1f9cc51e60e89ae1a618f",
+    "manifests/nginx.pp": "78e8a8595106ce6300426e82a4eb53a5",
+    "manifests/php.pp": "007047a6ae6cd2f0705cce109da8d827",
+  
+  }
+}
